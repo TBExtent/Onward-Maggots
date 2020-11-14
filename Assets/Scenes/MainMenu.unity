@@ -1978,7 +1978,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8387615250491791395, guid: 8a6b2eabc3489b04da2a1ac04cb80a6a, type: 3}
       propertyPath: m_Text
-      value: Onwards MAggots
+      value: Onward Maggots
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8a6b2eabc3489b04da2a1ac04cb80a6a, type: 3}
