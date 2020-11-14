@@ -16,7 +16,7 @@ public class MinionGoal : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        transform.Rotate(new Vector3(0, 0, 5f));
     }
 
     void OnTriggerEnter2D(Collider2D other) {
