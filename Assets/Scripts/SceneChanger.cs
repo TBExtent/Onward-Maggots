@@ -5,16 +5,16 @@ using UnityEngine.SceneManagement;
 
 public class SceneChanger : MonoBehaviour
 {
+    public void ChangeScene(string sceneName)
+    {
+        SceneManager.LoadScene(sceneName);
+    }
     public void MainMenu()
     {
         SceneManager.LoadScene("MainMenu");
     }
-    public void Credits()
+    public void Level1()
     {
-        SceneManager.LoadScene("Credits");
-    }
-    public void ShootingMinions()
-    {
-        SceneManager.LoadScene("ShootingMinions");
+        SceneManager.LoadScene("Level1");
     }
 }
