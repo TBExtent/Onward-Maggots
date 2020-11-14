@@ -6,6 +6,7 @@ public class RocketTowerBehaviour : MonoBehaviour
 {
     public GameObject Target;
     public GameObject Head;
+    public GameObject Body;
     public GameObject Rocket;
     float angle;
     bool shootingEnabled;
@@ -29,6 +30,9 @@ public class RocketTowerBehaviour : MonoBehaviour
                 Invoke("shootRocket", 1f);
             }
         }
+
+        Head.GetComponent<SpriteRenderer>().color = new Color(1, health / 100, health / 100);
+        Body.GetComponent<SpriteRenderer>().color = new Color(1, health / 100, health / 100);
 
         if (health <= 0f) {
             Destroy(gameObject);

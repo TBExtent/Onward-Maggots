@@ -437,4 +437,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Target: {fileID: 0}
   Head: {fileID: 4870498783490985351}
+  Body: {fileID: 4870498783049649041}
   Laser: {fileID: 7451330356788559949, guid: 0cf45d91230f5594a80dec29de216e86, type: 3}

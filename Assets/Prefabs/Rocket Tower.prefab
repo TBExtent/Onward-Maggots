@@ -48,6 +48,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Target: {fileID: 0}
   Head: {fileID: 657488973052838101}
+  Body: {fileID: 657488972039355548}
   Rocket: {fileID: 4027597488260118018, guid: fa0becb48b8638f48a1df73c7b925a6f, type: 3}
 --- !u!1 &657488972039355548
 GameObject:

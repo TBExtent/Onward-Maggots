@@ -6,6 +6,7 @@ public class GunTowerBehaviour : MonoBehaviour
 {
     GameObject Target;
     public GameObject Head;
+    public GameObject Body;
     public GameObject Bullet;
     float angle;
     bool shootingEnabled;
@@ -14,7 +15,7 @@ public class GunTowerBehaviour : MonoBehaviour
 
     // Update is called once per frame
     void Update() {
-        if (Target != null) {
+        if (Target != null) { 
 
             angle = AngleBetweenTwoPoints(Target.transform.position, Head.transform.position);
 
@@ -27,6 +28,9 @@ public class GunTowerBehaviour : MonoBehaviour
                 Invoke("shootBullet", 0.25f);
             }
         }
+
+        Head.GetComponent<SpriteRenderer>().color = new Color(1, health/100, health/100);
+        Body.GetComponent<SpriteRenderer>().color = new Color(1, health / 100, health / 100);
 
         if (health <= 0f) {
             Destroy(gameObject);

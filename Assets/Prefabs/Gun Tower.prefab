@@ -354,6 +354,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Head: {fileID: 4142090206791659595}
+  Body: {fileID: 4142090206077033449}
   Bullet: {fileID: 2820357748916599317, guid: bfe7c80cdc5139042a91b95ea2cd2694, type: 3}
 --- !u!1 &4142090206791659595
 GameObject:

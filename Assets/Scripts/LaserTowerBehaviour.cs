@@ -6,6 +6,7 @@ public class LaserTowerBehaviour : MonoBehaviour
 {
     public GameObject Target;
     public GameObject Head;
+    public GameObject Body;
     public GameObject Laser;
     float angle;
     bool shootingEnabled;
@@ -14,10 +15,8 @@ public class LaserTowerBehaviour : MonoBehaviour
 
     // Update is called once per frame
     void Update() {
-        if (!shootingEnabled) {
-            Head.GetComponent<SpriteRenderer>().color = new Color(.4f, .4f, .4f);
-        } else {
-            Head.GetComponent<SpriteRenderer>().color = new Color(1f,1f,1f);
+        if (shootingEnabled) {
+            Head.transform.Rotate(0, 0, 5f);
         }
 
         if (Target != null) {
@@ -30,6 +29,9 @@ public class LaserTowerBehaviour : MonoBehaviour
                 }
             }
         }
+
+        Head.GetComponent<SpriteRenderer>().color = new Color(1, health / 100, health / 100);
+        Body.GetComponent<SpriteRenderer>().color = new Color(1, health / 100, health / 100);
 
         if (health <= 0f) {
             Destroy(gameObject);
