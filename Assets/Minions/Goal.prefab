@@ -10,7 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 6795213657309706786}
   - component: {fileID: 4662349219927080678}
-  - component: {fileID: 2725712465612514379}
+  - component: {fileID: 3073901516180257124}
+  - component: {fileID: 5286538818592305511}
   m_Layer: 0
   m_Name: Goal
   m_TagString: Untagged
@@ -27,7 +28,7 @@ Transform:
   m_GameObject: {fileID: 2747130888753181299}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.2, y: 0.2, z: 1}
+  m_LocalScale: {x: 0.05, y: 0.05, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -72,7 +73,7 @@ SpriteRenderer:
   m_SortingLayerID: 1769673845
   m_SortingLayer: 1
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 611f8089ed5e24bfdabd5d99fbeb6110, type: 3}
+  m_Sprite: {fileID: 21300000, guid: a34817fa86a07ae4aba32711bb977299, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -83,8 +84,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!61 &2725712465612514379
-BoxCollider2D:
+--- !u!114 &3073901516180257124
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2747130888753181299}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e901390b80a64ed1a7ae679be988288, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: 0
+--- !u!58 &5286538818592305511
+CircleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -97,15 +111,5 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 2.44, y: 2.44}
-    newSize: {x: 2.44, y: 2.44}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 2.44, y: 2.44}
-  m_EdgeRadius: 0
+  m_Radius: 4.2299995
