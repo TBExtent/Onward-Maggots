@@ -13,6 +13,12 @@ public class LaserTowerBehaviour : MonoBehaviour
 
     // Update is called once per frame
     void Update() {
+        if (!shootingEnabled) {
+            Head.GetComponent<SpriteRenderer>().color = new Color(.4f, .4f, .4f);
+        } else {
+            Head.GetComponent<SpriteRenderer>().color = new Color(1f,1f,1f);
+        }
+
         if (Target != null) {
             angle = AngleBetweenTwoPoints(Target.transform.position, Head.transform.position);
 

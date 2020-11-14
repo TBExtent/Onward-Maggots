@@ -140,7 +140,7 @@ PrefabInstance:
       objectReference: {fileID: 1966561641}
     - target: {fileID: 657488971989776607, guid: 9e9883689889ac2428f33f30177a30ca, type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 657488971989776607, guid: 9e9883689889ac2428f33f30177a30ca, type: 3}
       propertyPath: m_LocalPosition.x
@@ -203,13 +203,37 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4870498783490985353, guid: 0b9dd8e6a0cc8044c9ad65995b8af7a2, type: 3}
+      propertyPath: m_Size.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4870498783490985353, guid: 0b9dd8e6a0cc8044c9ad65995b8af7a2, type: 3}
+      propertyPath: m_Size.y
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4870498783490985353, guid: 0b9dd8e6a0cc8044c9ad65995b8af7a2, type: 3}
+      propertyPath: m_Color.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4870498783490985353, guid: 0b9dd8e6a0cc8044c9ad65995b8af7a2, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4870498783490985353, guid: 0b9dd8e6a0cc8044c9ad65995b8af7a2, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4870498783490985353, guid: 0b9dd8e6a0cc8044c9ad65995b8af7a2, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4870498784371905489, guid: 0b9dd8e6a0cc8044c9ad65995b8af7a2, type: 3}
       propertyPath: m_Name
       value: Laser Tower
       objectReference: {fileID: 0}
     - target: {fileID: 4870498784371905490, guid: 0b9dd8e6a0cc8044c9ad65995b8af7a2, type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 4870498784371905490, guid: 0b9dd8e6a0cc8044c9ad65995b8af7a2, type: 3}
       propertyPath: m_LocalPosition.x
@@ -426,7 +450,7 @@ Transform:
   m_Children:
   - {fileID: 1032753940}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &821740126
 GameObject:
@@ -697,7 +721,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4142090206654822007, guid: 5881b518e3d0b654eb517c7f24ca2eee, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 4142090206654822007, guid: 5881b518e3d0b654eb517c7f24ca2eee, type: 3}
       propertyPath: m_LocalPosition.x
