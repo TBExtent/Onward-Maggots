@@ -89,7 +89,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 0f4eb536d1ed0e1409a9d777290fc79e, type: 3}
+  m_Sprite: {fileID: 21300000, guid: f77ad0f3649834cad8e6e54fa54c39d3, type: 3}
   m_Color: {r: 1, g: 0, b: 0, a: 0.039215688}
   m_FlipX: 0
   m_FlipY: 0
@@ -109,7 +109,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 4037775441323941921}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cf5e33f39b3469545a3d3448f21bfebb, type: 3}
+  m_Script: {fileID: 11500000, guid: c3041778da0804ae49990545766f96e5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &4637037900058691757
@@ -201,7 +201,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 0f4eb536d1ed0e1409a9d777290fc79e, type: 3}
+  m_Sprite: {fileID: 21300000, guid: f77ad0f3649834cad8e6e54fa54c39d3, type: 3}
   m_Color: {r: 1, g: 0.38602668, b: 0, a: 0.039215688}
   m_FlipX: 0
   m_FlipY: 0
@@ -221,7 +221,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 4637037900058691757}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b445a36d9e7eeff47b104803ca992da2, type: 3}
+  m_Script: {fileID: 11500000, guid: 8a9e6447b96ed4877afaf7a6bee889ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &4870498783049649041
@@ -296,7 +296,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 2692938615380330224, guid: 616ac2553b014b4469fffbf35613a80e, type: 3}
+  m_Sprite: {fileID: 2692938615380330224, guid: 0a80788f0917245e1ab0f3d7cab0b961, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -378,7 +378,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: -3964856179284347504, guid: 616ac2553b014b4469fffbf35613a80e, type: 3}
+  m_Sprite: {fileID: -3964856179284347504, guid: 0a80788f0917245e1ab0f3d7cab0b961, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -432,10 +432,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 4870498784371905489}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0099a9817ebdec244a6da0435055f072, type: 3}
+  m_Script: {fileID: 11500000, guid: ff443b7b2edcd49ac88274ec9cd3f197, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Target: {fileID: 0}
   Head: {fileID: 4870498783490985351}
   Body: {fileID: 4870498783049649041}
-  Laser: {fileID: 7451330356788559949, guid: 0cf45d91230f5594a80dec29de216e86, type: 3}
+  Laser: {fileID: 7451330356788559949, guid: 8e4a2d91fd3084ce8b12198a51fc118c, type: 3}
