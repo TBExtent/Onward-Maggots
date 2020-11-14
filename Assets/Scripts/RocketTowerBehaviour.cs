@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class RocketTowerBehaviour : MonoBehaviour
 {
-    public GameObject Target;
+    GameObject Target;
     public GameObject Head;
     public GameObject Body;
     public GameObject Rocket;

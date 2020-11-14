@@ -31,10 +31,11 @@ public class MinionMove : MonoBehaviour
         if (!finished) {
             Vector2 nextPos = new Vector3(path[pathStep].x, path[pathStep].y);
             Vector2 direction2D = nextPos - rigidbody2d.position;
-            Vector2 move = direction2D.normalized * Time.deltaTime * speed;
+            float dist = Time.deltaTime * speed;
+            Vector2 move = direction2D.normalized * dist;
             Vector2 dest = rigidbody2d.position + move;
 
-            if (move.sqrMagnitude >= direction2D.sqrMagnitude) {
+            if (direction2D.sqrMagnitude <= dist * dist) {
                 dest = nextPos;
                 pathStep++;
                 if (pathStep == path.Count) {
