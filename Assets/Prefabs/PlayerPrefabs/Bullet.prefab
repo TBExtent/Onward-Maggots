@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 2185545510178427221}
   - component: {fileID: 7489641971726631841}
   - component: {fileID: 4107565692145047415}
-  - component: {fileID: -5854802665161024612}
+  - component: {fileID: 6613958241607799981}
   m_Layer: 0
   m_Name: Bullet
   m_TagString: Untagged
@@ -74,7 +74,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 9bcf7f3ba1839df4fbbe19e212a93eb5, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 53d325ea374a55544a279b7639c0d673, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -132,7 +132,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.042270884, y: 0.04881531}
   m_EdgeRadius: 0
---- !u!114 &-5854802665161024612
+--- !u!114 &6613958241607799981
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -141,8 +141,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 4525671440605215290}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2eac299adc078d340adba0d545c12b4c, type: 3}
+  m_Script: {fileID: 11500000, guid: 2ff45c5c64061e1478e39b16d7beb9c6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  destroyTimeDelay: 0.01
-  hitEffect: {fileID: 2512487782607178868, guid: a3cf6a0897885cf47bed6a1cc2b1028b, type: 3}
+  destroyTimeDelay: 0.005
+  hitEffect: {fileID: 2512487782607178868, guid: 886ab2f10b00ac3459ca3b7f780debe3, type: 3}
