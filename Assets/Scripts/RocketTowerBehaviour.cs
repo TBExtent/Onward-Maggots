@@ -59,7 +59,10 @@ public class RocketTowerBehaviour : MonoBehaviour
 
     public void setTarget(GameObject target) {
         Target = target;
-        Rocket.GetComponent<RocketBehaviour>().setTarget(Target);
+        Vector3 direction = (Target.transform.position - Head.transform.position);
+        direction.z = 0;
+        direction.Normalize();
+        Rocket.GetComponent<RocketBehaviour>().setDirection(direction);
     }
 
     public void takeDamage(float amount) {

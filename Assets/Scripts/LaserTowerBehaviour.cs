@@ -57,7 +57,10 @@ public class LaserTowerBehaviour : MonoBehaviour
 
     public void setTarget(GameObject target) {
         Target = target;
-        Laser.GetComponent<LaserBehaviour>().setTarget(Target);
+        Vector3 direction = (Target.transform.position - Head.transform.position);
+        direction.z = 0;
+        direction.Normalize();
+        Laser.GetComponent<LaserBehaviour>().setDirection(direction);
     }
 
     public void takeDamage(float amount) {

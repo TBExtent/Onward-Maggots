@@ -6,12 +6,9 @@ public class RocketBehaviour : MonoBehaviour
 {
     public float speed = 1f;
     public GameObject Target;
-    Vector3 direction;
+    public Vector3 direction;
 
     private void Start() {
-        direction = (Target.transform.position - transform.position);
-        direction.z = 0;
-        direction.Normalize();
         Invoke("die", .75f);
     }
 
@@ -29,8 +26,8 @@ public class RocketBehaviour : MonoBehaviour
         Destroy(gameObject);
     }
 
-    public void setTarget(GameObject target) {
-        Target = target;
+    public void setDirection(Vector3 dir) {
+        direction = dir;
     }
 
     private void OnTriggerEnter2D(Collider2D other) {

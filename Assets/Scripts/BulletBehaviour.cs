@@ -5,15 +5,10 @@ using UnityEngine;
 public class BulletBehaviour : MonoBehaviour
 {
     public float speed = 50f;
-    public float lifetime = .75f;
-    public GameObject Target;
-    Vector3 direction;
+    public Vector3 direction;
 
     private void Start() {
-        direction = (Target.transform.position - transform.position);
-        direction.z = 0;
-        direction.Normalize();
-        Invoke("die", lifetime);
+        Invoke("die", .75f);
     }
 
     // Update is called once per frame
@@ -25,8 +20,8 @@ public class BulletBehaviour : MonoBehaviour
         Destroy(gameObject);
     }
 
-    public void setTarget(GameObject target) {
-        Target = target;
+    public void setDirection(Vector3 dir) {
+        direction = dir;
     }
 
     /*private void OnCollisionEnter2D(Collision2D collision) {

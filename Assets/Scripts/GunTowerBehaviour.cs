@@ -56,7 +56,10 @@ public class GunTowerBehaviour : MonoBehaviour
 
     public void setTarget(GameObject target) {
         Target = target;
-        Bullet.GetComponent<BulletBehaviour>().setTarget(Target);
+        Vector3 direction = (Target.transform.position - Head.transform.position);
+        direction.z = 0;
+        direction.Normalize();
+        Bullet.GetComponent<BulletBehaviour>().setDirection(direction);
     }
 
     public void takeDamage(float amount) {
