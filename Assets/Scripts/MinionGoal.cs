@@ -13,7 +13,7 @@ public class MinionGoal : MonoBehaviour
     void Start()
     {
         current = 0;
-        text = GameObject.Find("Canvas").GetComponentInChildren<Text>();
+        text = GameObject.Find("Canvas").transform.Find("GoalText").GetComponent<Text>();
         text.text = "Minions teleported: " + current + "/" + target;
     }
 
