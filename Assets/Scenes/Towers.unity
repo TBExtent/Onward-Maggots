@@ -134,10 +134,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rocket Tower
       objectReference: {fileID: 0}
-    - target: {fileID: 657488971989776606, guid: 9e9883689889ac2428f33f30177a30ca, type: 3}
-      propertyPath: Player
-      value: 
-      objectReference: {fileID: 1966561641}
     - target: {fileID: 657488971989776607, guid: 9e9883689889ac2428f33f30177a30ca, type: 3}
       propertyPath: m_RootOrder
       value: 5
@@ -182,18 +178,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 657488973052838099, guid: 9e9883689889ac2428f33f30177a30ca, type: 3}
-      propertyPath: m_Color.a
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 657488973052838099, guid: 9e9883689889ac2428f33f30177a30ca, type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3816689564231328092, guid: 9e9883689889ac2428f33f30177a30ca, type: 3}
-      propertyPath: Player
-      value: 
-      objectReference: {fileID: 1966561641}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9e9883689889ac2428f33f30177a30ca, type: 3}
 --- !u!1001 &395228357
@@ -203,37 +187,13 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 4870498783490985353, guid: 0b9dd8e6a0cc8044c9ad65995b8af7a2, type: 3}
-      propertyPath: m_Size.x
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 4870498783490985353, guid: 0b9dd8e6a0cc8044c9ad65995b8af7a2, type: 3}
-      propertyPath: m_Size.y
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 4870498783490985353, guid: 0b9dd8e6a0cc8044c9ad65995b8af7a2, type: 3}
-      propertyPath: m_Color.a
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4870498783490985353, guid: 0b9dd8e6a0cc8044c9ad65995b8af7a2, type: 3}
-      propertyPath: m_Color.b
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4870498783490985353, guid: 0b9dd8e6a0cc8044c9ad65995b8af7a2, type: 3}
-      propertyPath: m_Color.g
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4870498783490985353, guid: 0b9dd8e6a0cc8044c9ad65995b8af7a2, type: 3}
-      propertyPath: m_Color.r
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 4870498784371905489, guid: 0b9dd8e6a0cc8044c9ad65995b8af7a2, type: 3}
       propertyPath: m_Name
       value: Laser Tower
       objectReference: {fileID: 0}
     - target: {fileID: 4870498784371905490, guid: 0b9dd8e6a0cc8044c9ad65995b8af7a2, type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 4870498784371905490, guid: 0b9dd8e6a0cc8044c9ad65995b8af7a2, type: 3}
       propertyPath: m_LocalPosition.x
@@ -275,14 +235,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4870498784371905491, guid: 0b9dd8e6a0cc8044c9ad65995b8af7a2, type: 3}
-      propertyPath: Player
-      value: 
-      objectReference: {fileID: 1966561641}
-    - target: {fileID: 5792484440154775829, guid: 0b9dd8e6a0cc8044c9ad65995b8af7a2, type: 3}
-      propertyPath: Player
-      value: 
-      objectReference: {fileID: 1966561641}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0b9dd8e6a0cc8044c9ad65995b8af7a2, type: 3}
 --- !u!1 &503877359
@@ -450,7 +402,7 @@ Transform:
   m_Children:
   - {fileID: 1032753940}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &821740126
 GameObject:
@@ -661,7 +613,7 @@ Transform:
   m_Children:
   - {fileID: 821740127}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!58 &1966561644
 CircleCollider2D:
@@ -707,21 +659,13 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 2969921827150979682, guid: 5881b518e3d0b654eb517c7f24ca2eee, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4142090206506875200, guid: 5881b518e3d0b654eb517c7f24ca2eee, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 4142090206654822006, guid: 5881b518e3d0b654eb517c7f24ca2eee, type: 3}
       propertyPath: m_Name
       value: Gun Tower
       objectReference: {fileID: 0}
     - target: {fileID: 4142090206654822007, guid: 5881b518e3d0b654eb517c7f24ca2eee, type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4142090206654822007, guid: 5881b518e3d0b654eb517c7f24ca2eee, type: 3}
       propertyPath: m_LocalPosition.x
@@ -763,14 +707,5 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4142090206654822008, guid: 5881b518e3d0b654eb517c7f24ca2eee, type: 3}
-      propertyPath: Player
-      value: 
-      objectReference: {fileID: 1966561641}
-    - target: {fileID: 6484916114713657916, guid: 5881b518e3d0b654eb517c7f24ca2eee, type: 3}
-      propertyPath: Player
-      value: 
-      objectReference: {fileID: 1966561641}
-    m_RemovedComponents:
-    - {fileID: 6755565745818959592, guid: 5881b518e3d0b654eb517c7f24ca2eee, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5881b518e3d0b654eb517c7f24ca2eee, type: 3}
