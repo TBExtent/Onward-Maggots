@@ -9,6 +9,12 @@ public class SceneChanger : MonoBehaviour
     {
         SceneManager.LoadScene(sceneName);
     }
+    public static void MainMenu()
+    {
+        PlayerPrefs.SetInt("Main Menu Panel", 0);
+        PlayerPrefs.Save();
+        SceneManager.LoadScene("MainMenu");
+    }
     public static void Credits()
     {
         PlayerPrefs.SetInt("Main Menu Panel", 1);
