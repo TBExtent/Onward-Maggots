@@ -60,6 +60,8 @@ public class GunTowerBehaviour : MonoBehaviour
         direction.z = 0;
         direction.Normalize();
         Bullet.GetComponent<BulletBehaviour>().setDirection(direction);
+        Bullet.GetComponent<BulletBehaviour>().speed = 50f * transform.localScale.x;
+        Bullet.transform.localScale = transform.localScale;
     }
 
     public void takeDamage(float amount) {
