@@ -10,6 +10,7 @@ public class GunTowerBehaviour : MonoBehaviour
     float angle;
     bool shootingEnabled;
     bool canShoot = true;
+    float health = 100f;
 
     // Update is called once per frame
     void Update() {
@@ -25,6 +26,10 @@ public class GunTowerBehaviour : MonoBehaviour
                 canShoot = false;
                 Invoke("shootBullet", 0.25f);
             }
+        }
+
+        if (health <= 0f) {
+            Destroy(gameObject);
         }
     }
 
@@ -48,6 +53,10 @@ public class GunTowerBehaviour : MonoBehaviour
     public void setTarget(GameObject target) {
         Target = target;
         Bullet.GetComponent<BulletBehaviour>().setTarget(Target);
+    }
+
+    public void takeDamage(float amount) {
+        health -= amount;
     }
 
 }

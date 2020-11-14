@@ -10,6 +10,7 @@ public class RocketTowerBehaviour : MonoBehaviour
     float angle;
     bool shootingEnabled;
     bool canShoot = true;
+    float health = 100f;
 
     // Update is called once per frame
     void Update() {
@@ -27,6 +28,10 @@ public class RocketTowerBehaviour : MonoBehaviour
                 Head.GetComponent<SpriteRenderer>().enabled = false;
                 Invoke("shootRocket", 1f);
             }
+        }
+
+        if (health <= 0f) {
+            Destroy(gameObject);
         }
     }
 
@@ -51,6 +56,10 @@ public class RocketTowerBehaviour : MonoBehaviour
     public void setTarget(GameObject target) {
         Target = target;
         Rocket.GetComponent<RocketBehaviour>().setTarget(Target);
+    }
+
+    public void takeDamage(float amount) {
+        health -= amount;
     }
 
 }

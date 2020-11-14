@@ -10,6 +10,7 @@ public class LaserTowerBehaviour : MonoBehaviour
     float angle;
     bool shootingEnabled;
     bool canShoot = true;
+    float health = 100f;
 
     // Update is called once per frame
     void Update() {
@@ -28,6 +29,10 @@ public class LaserTowerBehaviour : MonoBehaviour
                     Invoke("fireLaser", i * 0.02f);
                 }
             }
+        }
+
+        if (health <= 0f) {
+            Destroy(gameObject);
         }
     }
 
@@ -51,6 +56,10 @@ public class LaserTowerBehaviour : MonoBehaviour
     public void setTarget(GameObject target) {
         Target = target;
         Laser.GetComponent<LaserBehaviour>().setTarget(Target);
+    }
+
+    public void takeDamage(float amount) {
+        health -= amount;
     }
 
 }
