@@ -52,7 +52,7 @@ LineRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 0}
+  - {fileID: 10306, guid: 0000000000000000f000000000000000, type: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -73,9 +73,7 @@ LineRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Positions:
-  - {x: 0, y: 0, z: 0}
-  - {x: 0, y: 0, z: 1}
+  m_Positions: []
   m_Parameters:
     serializedVersion: 3
     widthMultiplier: 1
@@ -83,8 +81,8 @@ LineRenderer:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
-        time: 0
-        value: 1
+        time: 0.27921677
+        value: 0.052238464
         inSlope: 0
         outSlope: 0
         tangentMode: 0
@@ -128,7 +126,7 @@ LineRenderer:
     alignment: 0
     textureMode: 0
     shadowBias: 0.5
-    generateLightingData: 0
+    generateLightingData: 1
   m_UseWorldSpace: 1
   m_Loop: 0
 --- !u!114 &4810018537325250247
@@ -145,8 +143,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mapName: testMap
   gridPath:
-  - {x: 50, y: -50, z: 0}
-  - {x: 50, y: -50, z: 1}
+  - {x: 49, y: -41, z: 0}
+  - {x: 49, y: -41, z: 1}
+  - {x: 45, y: -55, z: -29}
 --- !u!114 &3009496032670733052
 MonoBehaviour:
   m_ObjectHideFlags: 0
