@@ -61,6 +61,8 @@ public class LaserTowerBehaviour : MonoBehaviour
         direction.z = 0;
         direction.Normalize();
         Laser.GetComponent<LaserBehaviour>().setDirection(direction);
+        Laser.GetComponent<LaserBehaviour>().speed = 70f * transform.localScale.x;
+        Laser.transform.localScale = transform.localScale;
     }
 
     public void takeDamage(float amount) {
