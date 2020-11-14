@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class PlayerAngerZoneBehaviour : MonoBehaviour
 {
-    public GameObject Player;
     int type;
     private void Start() {
         if (gameObject.GetComponentInParent<GunTowerBehaviour>() != null) type = 1;
@@ -12,22 +11,22 @@ public class PlayerAngerZoneBehaviour : MonoBehaviour
         if (gameObject.GetComponentInParent<LaserTowerBehaviour>() != null) type = 3;
     }
     private void OnTriggerStay2D(Collider2D other) {
-        if (other.gameObject == Player) {
+        if (other.gameObject.CompareTag("Player")) {
             if (type == 1) {
                 gameObject.GetComponentInParent<GunTowerBehaviour>().enableShooting();
-                gameObject.GetComponentInParent<GunTowerBehaviour>().setTarget(Player);
+                gameObject.GetComponentInParent<GunTowerBehaviour>().setTarget(other.gameObject);
             } else if (type == 2) {
                 gameObject.GetComponentInParent<RocketTowerBehaviour>().enableShooting();
-                gameObject.GetComponentInParent<RocketTowerBehaviour>().setTarget(Player);
+                gameObject.GetComponentInParent<RocketTowerBehaviour>().setTarget(other.gameObject);
             } else if (type == 3) {
                 gameObject.GetComponentInParent<LaserTowerBehaviour>().enableShooting();
-                gameObject.GetComponentInParent<LaserTowerBehaviour>().setTarget(Player);
+                gameObject.GetComponentInParent<LaserTowerBehaviour>().setTarget(other.gameObject);
             }
         }
     }
 
     private void OnTriggerExit2D(Collider2D other) {
-        if (other.gameObject == Player) {
+        if (other.gameObject.CompareTag("Player")) {
             if (type == 1) {
                 gameObject.GetComponentInParent<GunTowerBehaviour>().disableShooting();
             } else if (type == 2) {
