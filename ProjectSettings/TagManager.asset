@@ -5,6 +5,9 @@ TagManager:
   serializedVersion: 2
   tags:
   - Minion
+  - GunTower
+  - LaserTower
+  - RocketTower
   layers:
   - Default
   - TransparentFX
