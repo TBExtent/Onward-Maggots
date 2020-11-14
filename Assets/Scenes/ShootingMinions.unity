@@ -420,8 +420,12 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3009496032670733052, guid: 368f9e867bc8e4d42a63b2f46f7edb16, type: 3}
+      propertyPath: spawnProb
+      value: 0.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 3009496032670733052, guid: 368f9e867bc8e4d42a63b2f46f7edb16, type: 3}
       propertyPath: maxSpawnedMinions
-      value: 1
+      value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 5300893535883445657, guid: 368f9e867bc8e4d42a63b2f46f7edb16, type: 3}
       propertyPath: m_RootOrder
@@ -429,15 +433,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5300893535883445657, guid: 368f9e867bc8e4d42a63b2f46f7edb16, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.5477357
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5300893535883445657, guid: 368f9e867bc8e4d42a63b2f46f7edb16, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3.3221092
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5300893535883445657, guid: 368f9e867bc8e4d42a63b2f46f7edb16, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -53.11272
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5300893535883445657, guid: 368f9e867bc8e4d42a63b2f46f7edb16, type: 3}
       propertyPath: m_LocalRotation.w
