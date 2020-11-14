@@ -4,26 +4,23 @@ using UnityEngine;
 
 public class LaserTowerBehaviour : MonoBehaviour
 {
-    public GameObject Player;
+    public GameObject Target;
     public GameObject Head;
     public GameObject Laser;
     float angle;
     bool shootingEnabled;
     bool canShoot = true;
 
-    private void Start() {
-        Laser.GetComponent<LaserBehaviour>().setTarget(Player);
-    }
-
     // Update is called once per frame
     void Update() {
+        if (Target != null) {
+            angle = AngleBetweenTwoPoints(Target.transform.position, Head.transform.position);
 
-        angle = AngleBetweenTwoPoints(Player.transform.position, Head.transform.position);
-
-        if (shootingEnabled && canShoot) {
-            canShoot = false;
-            for (int i = 0; i < 5; i++) {
-                Invoke("fireLaser", i * 0.02f);
+            if (shootingEnabled && canShoot) {
+                canShoot = false;
+                for (int i = 0; i < 5; i++) {
+                    Invoke("fireLaser", i * 0.02f);
+                }
             }
         }
     }
@@ -44,4 +41,10 @@ public class LaserTowerBehaviour : MonoBehaviour
     public void disableShooting() {
         shootingEnabled = false;
     }
+
+    public void setTarget(GameObject target) {
+        Target = target;
+        Laser.GetComponent<LaserBehaviour>().setTarget(Target);
+    }
+
 }

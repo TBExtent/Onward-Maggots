@@ -4,27 +4,24 @@ using UnityEngine;
 
 public class RocketTowerBehaviour : MonoBehaviour
 {
-    public GameObject Player;
+    public GameObject Target;
     public GameObject Head;
     public GameObject Rocket;
     float angle;
     bool shootingEnabled;
     bool canShoot = true;
 
-    private void Start() {
-        Rocket.GetComponent<RocketBehaviour>().setTarget(Player);
-    }
-
     // Update is called once per frame
     void Update() {
-        angle = AngleBetweenTwoPoints(Player.transform.position, Head.transform.position);
-        Head.transform.rotation = Quaternion.Euler(new Vector3(0f, 0f, angle));
+        if (Target != null) {
+            angle = AngleBetweenTwoPoints(Target.transform.position, Head.transform.position);
+            Head.transform.rotation = Quaternion.Euler(new Vector3(0f, 0f, angle));
 
-        if (shootingEnabled && canShoot) {
-            canShoot = false;
-            Invoke("shootRocket", 1f);
+            if (shootingEnabled && canShoot) {
+                canShoot = false;
+                Invoke("shootRocket", 1f);
+            }
         }
-
     }
 
     float AngleBetweenTwoPoints(Vector3 a, Vector3 b) {
@@ -42,6 +39,11 @@ public class RocketTowerBehaviour : MonoBehaviour
 
     public void disableShooting() {
         shootingEnabled = false;
+    }
+
+    public void setTarget(GameObject target) {
+        Target = target;
+        Rocket.GetComponent<RocketBehaviour>().setTarget(Target);
     }
 
 }
