@@ -10,6 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 5300893535883445657}
   - component: {fileID: 2402092734820192100}
+  - component: {fileID: 4810018537325250247}
+  - component: {fileID: 3009496032670733052}
   m_Layer: 0
   m_Name: MinionStart
   m_TagString: Untagged
@@ -129,3 +131,37 @@ LineRenderer:
     generateLightingData: 0
   m_UseWorldSpace: 1
   m_Loop: 0
+--- !u!114 &4810018537325250247
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2194783127654247141}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a382c0c18d3c84dd4aad980aee0b4285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mapName: testMap
+  gridPath:
+  - {x: 50, y: -50, z: 0}
+  - {x: 50, y: -50, z: 1}
+--- !u!114 &3009496032670733052
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2194783127654247141}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62ecf9a60d384495a96496ef10389f57, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  minions:
+  - {fileID: 6096435237591428346, guid: 6433d3823636d495698d4131e564c28f, type: 3}
+  minionProportions: 01000000
+  spawnProb: 0.05
+  maxSpawnedMinions: -1
+  maxActiveMinions: -1
