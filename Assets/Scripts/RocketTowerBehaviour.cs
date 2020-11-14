@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class RocketTowerBehaviour : MonoBehaviour
 {
-    public GameObject Target;
+    GameObject Target;
     public GameObject Head;
     public GameObject Body;
     public GameObject Rocket;
@@ -59,7 +59,11 @@ public class RocketTowerBehaviour : MonoBehaviour
 
     public void setTarget(GameObject target) {
         Target = target;
-        Rocket.GetComponent<RocketBehaviour>().setTarget(Target);
+        Vector3 direction = (Target.transform.position - Head.transform.position);
+        direction.z = 0;
+        direction.Normalize();
+        Rocket.GetComponent<RocketBehaviour>().setDirection(direction);
+        Rocket.transform.localScale = transform.localScale;
     }
 
     public void takeDamage(float amount) {

@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class LaserTowerBehaviour : MonoBehaviour
 {
-    public GameObject Target;
+    GameObject Target;
     public GameObject Head;
     public GameObject Body;
     public GameObject Laser;
@@ -57,7 +57,12 @@ public class LaserTowerBehaviour : MonoBehaviour
 
     public void setTarget(GameObject target) {
         Target = target;
-        Laser.GetComponent<LaserBehaviour>().setTarget(Target);
+        Vector3 direction = (Target.transform.position - Head.transform.position);
+        direction.z = 0;
+        direction.Normalize();
+        Laser.GetComponent<LaserBehaviour>().setDirection(direction);
+        Laser.GetComponent<LaserBehaviour>().speed = 70f * transform.localScale.x;
+        Laser.transform.localScale = transform.localScale;
     }
 
     public void takeDamage(float amount) {
