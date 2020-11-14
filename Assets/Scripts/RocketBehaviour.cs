@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class RocketBehaviour : MonoBehaviour
 {
-    public float speed = 50f;
+    public float speed = 1f;
     public GameObject Target;
     Vector3 direction;
 
@@ -18,6 +18,10 @@ public class RocketBehaviour : MonoBehaviour
     // Update is called once per frame
     void Update() {
         transform.position += direction * speed * Time.deltaTime;
+    }
+
+    private void FixedUpdate() {
+        speed *= 1.2f;
     }
 
     void die() {

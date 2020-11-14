@@ -8,6 +8,8 @@ public class RocketTowerBehaviour : MonoBehaviour
     public GameObject Head;
     public GameObject Rocket;
     float angle;
+    bool shootingEnabled;
+    bool canShoot = true;
 
     private void Start() {
         Rocket.GetComponent<RocketBehaviour>().setTarget(Player);
@@ -18,12 +20,28 @@ public class RocketTowerBehaviour : MonoBehaviour
         angle = AngleBetweenTwoPoints(Player.transform.position, Head.transform.position);
         Head.transform.rotation = Quaternion.Euler(new Vector3(0f, 0f, angle));
 
-        if (Input.GetMouseButtonDown(2)) {
-            Instantiate(Rocket, Head.transform.position, Quaternion.Euler(0f, 0f, angle));
+        if (shootingEnabled && canShoot) {
+            canShoot = false;
+            Invoke("shootRocket", 1f);
         }
+
     }
 
     float AngleBetweenTwoPoints(Vector3 a, Vector3 b) {
         return Mathf.Atan2(a.y - b.y, a.x - b.x) * Mathf.Rad2Deg;
     }
+
+    void shootRocket() {
+        Instantiate(Rocket, Head.transform.position, Quaternion.Euler(0f, 0f, angle));
+        canShoot = true;
+    }
+
+    public void enableShooting() {
+        shootingEnabled = true;
+    }
+
+    public void disableShooting() {
+        shootingEnabled = false;
+    }
+
 }
