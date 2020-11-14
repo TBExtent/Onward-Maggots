@@ -5,6 +5,7 @@ using UnityEngine;
 public class BulletBehaviour : MonoBehaviour
 {
     public float speed = 50f;
+    public float lifetime = .75f;
     public GameObject Target;
     Vector3 direction;
 
@@ -12,7 +13,7 @@ public class BulletBehaviour : MonoBehaviour
         direction = (Target.transform.position - transform.position);
         direction.z = 0;
         direction.Normalize();
-        Invoke("die", .75f);
+        Invoke("die", lifetime);
     }
 
     // Update is called once per frame
