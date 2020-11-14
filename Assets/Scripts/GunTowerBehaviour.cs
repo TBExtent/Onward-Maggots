@@ -14,8 +14,12 @@ public class GunTowerBehaviour : MonoBehaviour
     // Update is called once per frame
     void Update() {
         if (Target != null) {
+
             angle = AngleBetweenTwoPoints(Target.transform.position, Head.transform.position);
-            Head.transform.rotation = Quaternion.Euler(new Vector3(0f, 0f, angle));
+
+            if (shootingEnabled) {
+                Head.transform.rotation = Quaternion.Euler(new Vector3(0f, 0f, angle));
+            }
 
             if (shootingEnabled && canShoot) {
                 canShoot = false;

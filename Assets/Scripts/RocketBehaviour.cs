@@ -21,6 +21,7 @@ public class RocketBehaviour : MonoBehaviour
     }
 
     private void FixedUpdate() {
+
         speed *= 1.2f;
     }
 
