@@ -27,6 +27,7 @@ public class MinionGoal : MonoBehaviour
 
             if (current >= target) {
                 Debug.Log("WOOOOOOO");
+                SceneChanger.Credits();
             }
         }
     }
