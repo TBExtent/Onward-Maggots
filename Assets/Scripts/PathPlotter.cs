@@ -42,6 +42,7 @@ public class PathPlotter : MonoBehaviour
 
         for (int i = 0; i < lr.positionCount; i++) {
             path[i] = grid.CellToWorld(gridPath[i]);
+            path[i].z = 100;
         }
 
         lr.SetPositions(path);
