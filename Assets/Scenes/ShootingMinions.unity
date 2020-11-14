@@ -494,7 +494,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3009496032670733052, guid: 368f9e867bc8e4d42a63b2f46f7edb16, type: 3}
       propertyPath: spawnProb
-      value: 0.01
+      value: 0.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 3009496032670733052, guid: 368f9e867bc8e4d42a63b2f46f7edb16, type: 3}
+      propertyPath: maxActiveMinions
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 3009496032670733052, guid: 368f9e867bc8e4d42a63b2f46f7edb16, type: 3}
       propertyPath: maxSpawnedMinions

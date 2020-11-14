@@ -58,4 +58,8 @@ public class MinionSpawner : MonoBehaviour
             }
         }
     }
+
+    public void MinionWasKilled() {
+        activeMinions--;
+    }
 }
