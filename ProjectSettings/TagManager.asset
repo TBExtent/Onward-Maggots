@@ -5,6 +5,9 @@ TagManager:
   serializedVersion: 2
   tags:
   - Minion
+  - GunTower
+  - LaserTower
+  - RocketTower
   layers:
   - Default
   - TransparentFX
@@ -41,4 +44,7 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: TOP
+    uniqueID: 1769673845
     locked: 0

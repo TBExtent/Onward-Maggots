@@ -35,13 +35,14 @@ public class PathPlotter : MonoBehaviour
         gridPath = new List<Vector3Int>();
 
         for (int i = 0; i < lr.positionCount; i++) {
+            path[i].z = 100;
             gridPath.Add(grid.WorldToCell(path[i]));
         }
 
-        path = new Vector3[lr.positionCount];
+        //path = new Vector3[lr.positionCount];
 
         for (int i = 0; i < lr.positionCount; i++) {
-            path[i] = grid.CellToWorld(gridPath[i]);
+            //path[i] = grid.CellToWorld(gridPath[i]);
         }
 
         lr.SetPositions(path);
