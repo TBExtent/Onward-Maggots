@@ -926,3 +926,94 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: -2695619058785784247, guid: 4be68d8361d2042fcb1a1eb7c5284581, type: 3}
+--- !u!1001 &1156787863093836028
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2747130888753181299, guid: 394cddb83272b473dadb9179fe494740, type: 3}
+      propertyPath: m_Name
+      value: Goal
+      objectReference: {fileID: 0}
+    - target: {fileID: 4662349219927080678, guid: 394cddb83272b473dadb9179fe494740, type: 3}
+      propertyPath: m_Size.x
+      value: 2.44
+      objectReference: {fileID: 0}
+    - target: {fileID: 4662349219927080678, guid: 394cddb83272b473dadb9179fe494740, type: 3}
+      propertyPath: m_Size.y
+      value: 2.44
+      objectReference: {fileID: 0}
+    - target: {fileID: 4662349219927080678, guid: 394cddb83272b473dadb9179fe494740, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 611f8089ed5e24bfdabd5d99fbeb6110, type: 3}
+    - target: {fileID: 4662349219927080678, guid: 394cddb83272b473dadb9179fe494740, type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6795213657309706786, guid: 394cddb83272b473dadb9179fe494740, type: 3}
+      propertyPath: m_RootOrder
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6795213657309706786, guid: 394cddb83272b473dadb9179fe494740, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 3.43
+      objectReference: {fileID: 0}
+    - target: {fileID: 6795213657309706786, guid: 394cddb83272b473dadb9179fe494740, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 4.83
+      objectReference: {fileID: 0}
+    - target: {fileID: 6795213657309706786, guid: 394cddb83272b473dadb9179fe494740, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6795213657309706786, guid: 394cddb83272b473dadb9179fe494740, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6795213657309706786, guid: 394cddb83272b473dadb9179fe494740, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6795213657309706786, guid: 394cddb83272b473dadb9179fe494740, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6795213657309706786, guid: 394cddb83272b473dadb9179fe494740, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6795213657309706786, guid: 394cddb83272b473dadb9179fe494740, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6795213657309706786, guid: 394cddb83272b473dadb9179fe494740, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6795213657309706786, guid: 394cddb83272b473dadb9179fe494740, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 394cddb83272b473dadb9179fe494740, type: 3}
+--- !u!1 &1156787863093836029 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2747130888753181299, guid: 394cddb83272b473dadb9179fe494740, type: 3}
+  m_PrefabInstance: {fileID: 1156787863093836028}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1156787863093836030
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1156787863093836029}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e901390b80a64ed1a7ae679be988288, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: 10
