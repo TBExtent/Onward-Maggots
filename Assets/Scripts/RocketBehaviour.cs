@@ -30,17 +30,9 @@ public class RocketBehaviour : MonoBehaviour
         direction = dir;
     }
 
-    /*private void OnCollisionEnter2D(Collision2D collision) {
-        if (collision.gameObject.CompareTag("Player") || collision.gameObject.CompareTag("Minion")) {
-            die();
-            // Damage target here
-        }
-    }*/
-
     private void OnTriggerEnter2D(Collider2D other) {
         if (other.gameObject.CompareTag("Player") || other.gameObject.CompareTag("Minion")) {
             die();
-            // Damage target here
         }
     }
 
