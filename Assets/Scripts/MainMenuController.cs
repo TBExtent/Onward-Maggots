@@ -8,6 +8,7 @@ public class MainMenuController : MonoBehaviour
     public static Transform[] menus;
     public Transform startMenu;
     public AudioSource gameOverSound;
+    public AudioSource menuMusic;
 
     private void Awake()
     {
@@ -20,6 +21,10 @@ public class MainMenuController : MonoBehaviour
         if (PlayerPrefs.GetInt("Main Menu Panel") == 2)
         {
             gameOverSound.Play();
+        }
+        else
+        {
+            menuMusic.Play();
         }
 
         SwitchToMenu(PlayerPrefs.GetInt("Main Menu Panel"));

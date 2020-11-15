@@ -248,7 +248,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &93235939
 GameObject:
@@ -1457,7 +1457,7 @@ GameObject:
   - component: {fileID: 849385497}
   - component: {fileID: 849385496}
   m_Layer: 0
-  m_Name: Audio Source
+  m_Name: Menu Music
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1474,7 +1474,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 476b418f438a1e74fbe1db15899c8bfc, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 1
@@ -1571,7 +1571,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &865302719
 GameObject:
@@ -1605,7 +1605,7 @@ Transform:
   - {fileID: 1057048941}
   - {fileID: 1310765959}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &865302721
 MonoBehaviour:
@@ -1848,7 +1848,7 @@ Transform:
   - {fileID: 602208030}
   - {fileID: 93235940}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1078546330
 MonoBehaviour:
@@ -1864,6 +1864,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startMenu: {fileID: 1826981412}
   gameOverSound: {fileID: 74649080}
+  menuMusic: {fileID: 849385496}
 --- !u!1 &1310765958 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 657488971989776592, guid: 231e3d71e364b42c2be756bea700937d, type: 3}
