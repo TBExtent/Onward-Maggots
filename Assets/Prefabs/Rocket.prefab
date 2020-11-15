@@ -52,6 +52,8 @@ MonoBehaviour:
   Target: {fileID: 0}
   direction: {x: 0.9725127, y: -0.23284972, z: 0}
   lifetime: 3
+  hitEffect: {fileID: 8385739250602429367, guid: 07899850996444a77baf7b744733d9f7, type: 3}
+  destroyTimeDelay: 0.05
 --- !u!61 &6943863247277281276
 BoxCollider2D:
   m_ObjectHideFlags: 0

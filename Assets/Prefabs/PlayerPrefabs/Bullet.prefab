@@ -147,6 +147,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   destroyTimeDelay: 0.05
   hitEffect: {fileID: 2512487782607178868, guid: 886ab2f10b00ac3459ca3b7f780debe3, type: 3}
+  lifetime: 0.2
 --- !u!82 &4794856557020926497
 AudioSource:
   m_ObjectHideFlags: 0
