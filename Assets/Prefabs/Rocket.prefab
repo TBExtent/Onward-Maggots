@@ -48,9 +48,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 069e0bce0014c45fdb28ff91ccdfb660, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  accel: 15
+  accel: 2.5
   Target: {fileID: 0}
-  direction: {x: 0.9977475, y: -0.06708115, z: 0}
+  direction: {x: 0.9725127, y: -0.23284972, z: 0}
+  lifetime: 3
 --- !u!61 &6943863247277281276
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -89,7 +90,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
+  m_Mass: 0.1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 0
