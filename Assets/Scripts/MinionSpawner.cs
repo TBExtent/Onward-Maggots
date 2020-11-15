@@ -45,7 +45,9 @@ public class MinionSpawner : MonoBehaviour
                             Vector3[] path = new Vector3[lr.positionCount];
                             lr.GetPositions(path);
 
-                            GameObject minion = Instantiate(minions[i], path[0], Quaternion.identity, transform);
+                            Vector3 start = path[0];
+                            start.z = 0;
+                            GameObject minion = Instantiate(minions[i], start, Quaternion.identity, transform);
 
                             minion.GetComponent<MinionMove>().path = new List<Vector3>(path);
                         }

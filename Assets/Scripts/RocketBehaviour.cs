@@ -4,23 +4,32 @@ using UnityEngine;
 
 public class RocketBehaviour : MonoBehaviour
 {
-    public float speed = 1f;
+    public float accel = 10f;
     public GameObject Target;
     public Vector3 direction;
+    private Rigidbody2D rigidbody2D;
 
     private void Start() {
         Invoke("die", .75f);
+        rigidbody2D = GetComponent<Rigidbody2D>();
     }
 
     // Update is called once per frame
-    void Update() {
-        transform.position += direction * speed * Time.deltaTime;
-    }
-
     private void FixedUpdate() {
-
-        speed *= 1.2f;
+        if (Target != null) {
+            direction = (Target.transform.position - transform.position);
+            direction.z = 0;
+            direction.Normalize();
+        }
+        rigidbody2D.AddForce(direction * accel);
+        rigidbody2D.SetRotation(Vector2.SignedAngle(Vector2.right, rigidbody2D.velocity));
+        //transform.position += direction * speed * Time.deltaTime;
     }
+
+    //private void FixedUpdate() {
+
+        //speed *= 1.2f;
+    //}
 
     void die() {
         Destroy(gameObject);
