@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 
 public class MinionSpawner : MonoBehaviour
@@ -11,16 +12,19 @@ public class MinionSpawner : MonoBehaviour
     public int maxSpawnedMinions;
     public int maxActiveMinions;
     public GameObject MinionNoisePlayer;
+    public bool gameOverIfNoMoreMinions;
 
     private int sum = -1;
     private LineRenderer lr = null;
     private int spawnedMinions = 0;
     private int activeMinions = 0;
+    private Text text;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        text = GameObject.Find("Player").transform.Find("Canvas").transform.Find("GoalText").GetComponent<Text>();
+        text.text = "Minions left: " + (maxSpawnedMinions - spawnedMinions + activeMinions);
     }
 
     // Update is called once per frame
@@ -56,14 +60,32 @@ public class MinionSpawner : MonoBehaviour
 
                         spawnedMinions++;
                         activeMinions++;
+
+                        text.text = "Minions left: " + (maxSpawnedMinions - spawnedMinions + activeMinions);
                     }
                 }
             }
+        }
+
+        if (gameOverIfNoMoreMinions &&
+            spawnedMinions == maxSpawnedMinions &&
+            activeMinions == 0) {
+
+            SceneChanger.GameOver();
         }
     }
 
     public void MinionWasKilled() {
         activeMinions--;
         MinionNoisePlayer.GetComponent<MinionDeathNoiseController>().minionHasDied();
+
+        text.text = "Minions left: " + (maxSpawnedMinions - spawnedMinions + activeMinions);
+
+        if (gameOverIfNoMoreMinions &&
+            spawnedMinions == maxSpawnedMinions &&
+            activeMinions == 0) {
+
+            SceneChanger.GameOver();
+        }
     }
 }
