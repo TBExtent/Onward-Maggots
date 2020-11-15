@@ -12,6 +12,11 @@ public class LaserTowerBehaviour : MonoBehaviour
     bool shootingEnabled;
     bool canShoot = true;
     float health = 100f;
+    public float maxHealth = 100f;
+
+    void Start() {
+        health = maxHealth;
+    }
 
     // Update is called once per frame
     void Update() {
@@ -30,8 +35,8 @@ public class LaserTowerBehaviour : MonoBehaviour
             }
         }
 
-        Head.GetComponent<SpriteRenderer>().color = new Color(1, health / 100, health / 100);
-        Body.GetComponent<SpriteRenderer>().color = new Color(1, health / 100, health / 100);
+        Head.GetComponent<SpriteRenderer>().color = new Color(1, health / maxHealth, health / maxHealth);
+        Body.GetComponent<SpriteRenderer>().color = new Color(1, health / maxHealth, health / maxHealth);
 
         if (health <= 0f) {
             Destroy(gameObject);
