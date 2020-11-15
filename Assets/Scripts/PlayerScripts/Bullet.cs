@@ -14,6 +14,9 @@ public class Bullet : MonoBehaviour
     void OnCollisionEnter2D(Collision2D collision)
     {
         // GameObject effect = Instantiate(hitEffect, transform.position, Quaternion.identity);
+        if (collision.gameObject.CompareTag("Player")) {
+            return;
+        }
         if (collision.gameObject.CompareTag("GunTower")) {
             collision.gameObject.GetComponent<GunTowerBehaviour>().takeDamage(10f);
         } else if (collision.gameObject.CompareTag("LaserTower")) {
