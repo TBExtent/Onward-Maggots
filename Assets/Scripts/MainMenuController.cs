@@ -16,10 +16,10 @@ public class MainMenuController : MonoBehaviour
             menus[i] = transform.GetChild(i);
         }
 
-        SwitchToMenu(startMenu);
+        SwitchToMenu(PlayerPrefs.GetInt("Main Menu Panel"));
     }
 
-    public void SwitchToMenu(Transform currentMenu)
+    public static void SwitchToMenu(Transform currentMenu)
     {
         currentMenu.gameObject.SetActive(true);
         for (int i = 0; i < menus.Length; i++)
@@ -29,5 +29,10 @@ public class MainMenuController : MonoBehaviour
                 menus[i].gameObject.SetActive(false);
             }
         }
+    }
+
+    public static void SwitchToMenu(int panelIndex)
+    {
+        SwitchToMenu(menus[panelIndex]);
     }
 }

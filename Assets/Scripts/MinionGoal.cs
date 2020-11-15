@@ -13,7 +13,7 @@ public class MinionGoal : MonoBehaviour
     void Start()
     {
         current = 0;
-        text = GameObject.Find("Canvas").transform.Find("GoalText").GetComponent<Text>();
+        text = GameObject.Find("Player").transform.Find("Canvas").transform.Find("GoalText").GetComponent<Text>();
         text.text = "Minions teleported: " + current + "/" + target;
     }
 
@@ -32,6 +32,7 @@ public class MinionGoal : MonoBehaviour
 
             if (current >= target) {
                 Debug.Log("WOOOOOOO");
+                SceneChanger.Credits();
             }
         }
     }

@@ -11,7 +11,7 @@ public class DoesDamage : MonoBehaviour
             other.gameObject.GetComponent<MinionHealth>().doDamage(damage);
         }
         else if (other.gameObject.CompareTag("Player")) {
-            //other.gameObject.GetComponent<PlayerHealthController>().doDamage(damage);
+            other.gameObject.GetComponent<PlayerHealthController>().doDamage(damage);
         }
     }
 

@@ -5,12 +5,20 @@ using UnityEngine.SceneManagement;
 
 public class SceneChanger : MonoBehaviour
 {
-    public void ChangeScene(string sceneName)
+    public static void ChangeScene(string sceneName)
     {
         SceneManager.LoadScene(sceneName);
     }
-    public void MainMenu()
+    public static void MainMenu()
     {
+        PlayerPrefs.SetInt("Main Menu Panel", 0);
+        PlayerPrefs.Save();
+        SceneManager.LoadScene("MainMenu");
+    }
+    public static void Credits()
+    {
+        PlayerPrefs.SetInt("Main Menu Panel", 1);
+        PlayerPrefs.Save();
         SceneManager.LoadScene("MainMenu");
     }
     public void Level1()
