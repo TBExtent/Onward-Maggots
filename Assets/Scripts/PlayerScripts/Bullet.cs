@@ -11,22 +11,24 @@ public class Bullet : MonoBehaviour
         Invoke("die", 2f);
     }
 
-    void OnCollisionEnter2D(Collision2D collision)
+    void OnTriggerEnter2D(Collider2D collision)
     {
-        // GameObject effect = Instantiate(hitEffect, transform.position, Quaternion.identity);
-        if (collision.gameObject.CompareTag("Player")) {
-            return;
-        }
         if (collision.gameObject.CompareTag("GunTower")) {
             collision.gameObject.GetComponent<GunTowerBehaviour>().takeDamage(10f);
+            GameObject effect = Instantiate(hitEffect, transform.position, transform.rotation);
+            Destroy(effect, destroyTimeDelay);
+            Destroy(gameObject);
         } else if (collision.gameObject.CompareTag("LaserTower")) {
             collision.gameObject.GetComponent<LaserTowerBehaviour>().takeDamage(10f);
+            GameObject effect = Instantiate(hitEffect, transform.position, transform.rotation);
+            Destroy(effect, destroyTimeDelay);
+            Destroy(gameObject);
         } else if (collision.gameObject.CompareTag("RocketTower")) {
             collision.gameObject.GetComponent<RocketTowerBehaviour>().takeDamage(10f);
+            GameObject effect = Instantiate(hitEffect, transform.position, transform.rotation);
+            Destroy(effect, destroyTimeDelay);
+            Destroy(gameObject);
         }
-        GameObject effect = Instantiate(hitEffect, transform.position, transform.rotation);
-        Destroy(effect, destroyTimeDelay);
-        Destroy(gameObject);
     }
 
     void die() {
