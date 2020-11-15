@@ -8,6 +8,8 @@ public class RocketBehaviour : MonoBehaviour
     public GameObject Target;
     public Vector3 direction;
     public float lifetime = .75f;
+    public GameObject hitEffect;
+    public float destroyTimeDelay = 0.05f;
     private Rigidbody2D rigidbody2D;
 
     private void Start() {
@@ -38,6 +40,8 @@ public class RocketBehaviour : MonoBehaviour
     //}
 
     void die() {
+        GameObject effect = Instantiate(hitEffect, transform.position, transform.rotation);
+        Destroy(effect, destroyTimeDelay);
         Destroy(gameObject);
     }
 

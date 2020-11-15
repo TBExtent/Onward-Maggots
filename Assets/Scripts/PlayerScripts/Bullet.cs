@@ -6,9 +6,10 @@ public class Bullet : MonoBehaviour
 {
     public float destroyTimeDelay = 0.01f;
     public GameObject hitEffect;
+    public float lifetime = .75f;
 
     public void Start() {
-        Invoke("die", 2f);
+        Invoke("die", lifetime);
     }
 
     void OnTriggerEnter2D(Collider2D collision)
