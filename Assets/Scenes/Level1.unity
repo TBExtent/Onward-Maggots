@@ -1492,7 +1492,7 @@ PrefabInstance:
       objectReference: {fileID: 1928990167}
     - target: {fileID: 3009496032670733052, guid: 368f9e867bc8e4d42a63b2f46f7edb16, type: 3}
       propertyPath: maxSpawnedMinions
-      value: 10
+      value: 150
       objectReference: {fileID: 0}
     - target: {fileID: 3009496032670733052, guid: 368f9e867bc8e4d42a63b2f46f7edb16, type: 3}
       propertyPath: gameOverIfNoMoreMinions
