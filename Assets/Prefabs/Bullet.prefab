@@ -131,7 +131,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 75
-  direction: {x: -0.5777391, y: -0.8162214, z: 0}
+  direction: {x: 0.6973799, y: -0.7167017, z: 0}
 --- !u!61 &5857335692733111978
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -188,7 +188,7 @@ AudioSource:
   m_GameObject: {fileID: 2820357748916599317}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 24300002, guid: dc6c89c9b22274d4da728f8a1cb4658f, type: 2}
   m_audioClip: {fileID: 8300000, guid: 2786ffdfc7f828c41b63028a4c3f3fec, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
