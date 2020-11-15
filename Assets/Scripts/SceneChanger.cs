@@ -21,6 +21,12 @@ public class SceneChanger : MonoBehaviour
         PlayerPrefs.Save();
         SceneManager.LoadScene("MainMenu");
     }
+    public static void GameOver()
+    {
+        PlayerPrefs.SetInt("Main Menu Panel", 2);
+        PlayerPrefs.Save();
+        SceneManager.LoadScene("MainMenu");
+    }
     public void Level1()
     {
         SceneManager.LoadScene("Level1");

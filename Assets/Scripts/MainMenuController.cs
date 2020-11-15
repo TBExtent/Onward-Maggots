@@ -7,6 +7,8 @@ public class MainMenuController : MonoBehaviour
 {
     public static Transform[] menus;
     public Transform startMenu;
+    public AudioSource gameOverSound;
+    public static AudioSource gameOverSoundStatic;
 
     private void Awake()
     {
@@ -15,6 +17,8 @@ public class MainMenuController : MonoBehaviour
         {
             menus[i] = transform.GetChild(i);
         }
+
+        gameOverSoundStatic = gameOverSound;
 
         SwitchToMenu(PlayerPrefs.GetInt("Main Menu Panel"));
     }
@@ -34,5 +38,11 @@ public class MainMenuController : MonoBehaviour
     public static void SwitchToMenu(int panelIndex)
     {
         SwitchToMenu(menus[panelIndex]);
+        if (panelIndex == 3)
+        {
+            gameOverSoundStatic.Play();
+        }
     }
+
+
 }
