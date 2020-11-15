@@ -29,6 +29,7 @@ public class MinionGoal : MonoBehaviour
             Destroy(other.gameObject);
             current++;
             text.text = "Minions teleported: " + current + "/" + target;
+            gameObject.GetComponent<AudioSource>().Play();
 
             if (current >= target) {
                 Debug.Log("WOOOOOOO");

@@ -10,6 +10,7 @@ public class MinionSpawner : MonoBehaviour
     public double spawnProb;
     public int maxSpawnedMinions;
     public int maxActiveMinions;
+    public GameObject MinionNoisePlayer;
 
     private int sum = -1;
     private LineRenderer lr = null;
@@ -63,5 +64,6 @@ public class MinionSpawner : MonoBehaviour
 
     public void MinionWasKilled() {
         activeMinions--;
+        MinionNoisePlayer.GetComponent<MinionDeathNoiseController>().minionHasDied();
     }
 }
