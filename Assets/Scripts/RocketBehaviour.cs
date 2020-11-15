@@ -10,7 +10,7 @@ public class RocketBehaviour : MonoBehaviour
     public float lifetime = .75f;
     public GameObject hitEffect;
     public float destroyTimeDelay = 0.05f;
-    private Rigidbody2D rigidbody2D;
+    new private Rigidbody2D rigidbody2D;
 
     private void Start() {
         Invoke("die", lifetime);
