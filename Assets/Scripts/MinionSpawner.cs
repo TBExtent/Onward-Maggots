@@ -23,7 +23,7 @@ public class MinionSpawner : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        text = GameObject.Find("Player").transform.Find("Canvas").transform.Find("GoalText").GetComponent<Text>();
+        text = GameObject.Find("Player").transform.Find("Canvas").transform.Find("MinionText").GetComponent<Text>();
         text.text = "Minions left: " + (maxSpawnedMinions - spawnedMinions + activeMinions);
     }
 
