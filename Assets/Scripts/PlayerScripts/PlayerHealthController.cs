@@ -25,7 +25,8 @@ public class PlayerHealthController : MonoBehaviour
         if (playerHealth <= 0) {
             playerHealth = 0;
             UpdateHealth();
-            Destroy(gameObject);
+            SceneChanger.GameOver();
+            //Destroy(gameObject);
         } 
         else 
         {
