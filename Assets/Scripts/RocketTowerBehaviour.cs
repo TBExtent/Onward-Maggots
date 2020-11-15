@@ -63,6 +63,7 @@ public class RocketTowerBehaviour : MonoBehaviour
         direction.z = 0;
         direction.Normalize();
         Rocket.GetComponent<RocketBehaviour>().setDirection(direction);
+        Rocket.GetComponent<RocketBehaviour>().Target = target;
         Rocket.transform.localScale = transform.localScale;
     }
 
