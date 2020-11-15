@@ -29,6 +29,7 @@ public class PlayerHealthController : MonoBehaviour
             doAlarm = false;
 
             //Play alarm sound
+            gameObject.GetComponent<AudioSource>().Play();
         }
 
         if (playerHealth <= 0) {
